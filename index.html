@@ -2,10 +2,37 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punto de Venta</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
+    <!--- LOGIN-->
+<div id="pantalla-login">
+    <div class="login-box">
+
+        <!-- encabezado del login -->
+         <div class="login-header">
+            <h2 id="loginTitulo">PUNTO DE VENTA</h2>
+            <p id="loginSubtitulo">Inicia sesión para continuar</p>
+        </div>
+
+        <!-- CAMPOS DE LOGIN-->
+         <div class="login-body">
+            <label id="labelEmail">Usuario:</label>
+            <input type="email" id="loginEmail" placeholder="correo@ejemplo.com">
+
+            <label id="labelPassword">Contraseña:</label>
+            <input type="password" id="loginPassword" placeholder="Ingresa tu contraseña">
+
+            <p id="loginError" class="error"></p>
+
+            <button id="loginButton">Iniciar Sesión</button>
+
+         </div>
+         
+    </div>
+</div>
 </body>
 </html>
