@@ -1,0 +1,99 @@
+/*======= variables generales ======*/
+:root {
+    --fondo-principal: #f0f0f0;
+    --fondo-ventana: #ffffff;
+    --fondo-barra: #000080;
+    --texto-principal: #000000;
+    --texto-secundario: #444444;
+    --borde: #999999;
+    --azul-boton: #000080;
+    --blanco: #ffffff;
+}
+
+/*======= estilos generales ======*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--fondo-principal);
+    color: var(--texto-principal);
+    font-size: 13px;
+}
+
+/*======login======*/
+
+#pantallaLogin {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondo-principal);
+    }
+
+    .login-box {
+        width: 300px;
+        background-color: var(--fondo-ventana);
+        border: 2px solid var(--borde);
+        box-shadow: 3px 3px 0px #888888;
+    }
+
+    .login-header {
+        background-color: var(--fondo-barra);
+        color: var(--blanco);
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .login-header h2 {
+        font-size: 13px;
+        font-weight: bold;
+        color: var(--blanco);
+    }
+
+    .login-header p {
+        font-size: 11px;
+        color: #cccccc;
+        margin-top: 2px;
+    }
+
+    .login-body {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .login-body label {
+        font-size: 12px;
+        font-weight: bold;
+        color: var(--texto-principal);
+    }
+
+    .login-body input {
+        width: 100%;
+        padding: 4px 6px;
+        border: 2px inset var(--borde);
+        font-size: 12px;
+        background-color: var(--blanco);
+    }
+
+    .login-body button {
+        margin-top: 10px;
+        padding: 4px 16px;
+        background-color: var(--fondo-ventana);
+        border: 2px outset var(--borde);
+        font-size: 12px;
+        cursor: pointer;
+        align-self: center;
+    }
+
+    .login-body button:active {
+        border: 2px inset var(--borde);
+    }
+
+    
