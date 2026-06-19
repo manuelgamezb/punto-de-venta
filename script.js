@@ -11,6 +11,20 @@ document.getElementById("btnLogin").addEventListener("click", function() {
         document.getElementById("loginError").style.color = "red";
         return;
     }
+
+    auth.signInWithEmailAndPassword(email, password)
+        .then(function(){
+            document.getElementById("pantallaLogin").style.display = "none";
+        })
+        .catch(function(error) {
+            document.getElementById("loginError").textContent = "Correo o contraseña incorrectos: ";
+            document.getElementById("loginError").style.color = "red";
+
+
+            
+        });
     
 });
+
+ 
 
