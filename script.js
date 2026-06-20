@@ -15,6 +15,7 @@ document.getElementById("btnLogin").addEventListener("click", function() {
     auth.signInWithEmailAndPassword(email, password)
         .then(function(){
             document.getElementById("pantallaLogin").style.display = "none";
+            document.getElementById("pantallaPrincipal").style.display = "block";
         })
         .catch(function(error) {
             document.getElementById("loginError").textContent = "Correo o contraseña incorrectos: ";
