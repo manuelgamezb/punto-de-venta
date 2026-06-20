@@ -27,5 +27,42 @@ document.getElementById("btnLogin").addEventListener("click", function() {
     
 });
 
+//===== NAVEGACION MENU =====
+function mostrarSeccion(seccion) {
+    let secciones = document.querySelectorAll(".seccion");
+    for (let i = 0; i < secciones.length; i++) {
+        secciones[i].classList.remove("active");
+    }
+
+    let botones = document.querySelectorAll(".menu-item");
+    for (let i = 0; i < botones.length; i++) {
+        botones[i].classList.remove("active");
+    }
+
+    document.getElementById("seccion" + nombreSeccion).classList.add("active");
+    document.getElementById("menu" + nombreSeccion).classList.add("active");
+}
+
+//===== BOTONES DEL MENU =====
+document.getElementById("menuDashboard").addEventListener("click", function() {
+    mostrarSeccion("Dashboard");
+});
+document.getElementById("menuVentas").addEventListener("click", function() {
+    mostrarSeccion("Ventas");
+});
+document.getElementById("menuProductos").addEventListener("click", function() {
+    mostrarSeccion("Productos");
+});
+document.getElementById("menuInventario").addEventListener("click", function() {
+    mostrarSeccion("Inventario");
+});
+document.getElementById("menuClientes").addEventListener("click", function() {
+    mostrarSeccion("Clientes");
+}); 
+document.getElementById("menuReportes").addEventListener("click", function() {
+    mostrarSeccion("Reportes");
+});
+
+
  
 
