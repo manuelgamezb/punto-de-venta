@@ -39,8 +39,8 @@ function mostrarSeccion(seccion) {
         botones[i].classList.remove("active");
     }
 
-    document.getElementById("seccion" + nombreSeccion).classList.add("active");
-    document.getElementById("menu" + nombreSeccion).classList.add("active");
+    document.getElementById("seccion" + seccion).classList.add("active");
+    document.getElementById("menu" + seccion).classList.add("active");
 }
 
 //===== BOTONES DEL MENU =====
