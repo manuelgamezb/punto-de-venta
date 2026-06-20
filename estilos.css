@@ -96,4 +96,86 @@ body {
         border: 2px inset var(--borde);
     }
 
-    
+    /* ===== BARRA DE TITULO ===== */
+
+    #barraTitulo {
+        background-color: var(--fondo-barra);
+        color: var(--blanco);
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 12px;
+        font-size: 12px;
+    }
+
+    .barra-izq span {
+        font-weight: bold;
+    }
+
+    .barra-der {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .barra-der button {
+        background-color: var(--fondo-ventana);
+        border: 2px outset var(--borde);
+        padding: 3px 10px;
+        font-size: 11px;
+        cursor: pointer;
+       
+    }
+    .barra-der button:active {
+        border: 2px inset var(--borde);
+    }
+
+    /* ====== CONTENEDOR PRINCIPAL ====== */
+
+    #contenedorPrincipal {
+        display: flex;
+        height: calc(100vh - 36px);
+    }
+    /* ====== MENU LATERAL =====*/
+    #menuLateral {
+        width: 180px;
+        background-color: var(--fondo-ventana);
+        border-right: 2px solid var(--borde);
+        display: flex;
+        flex-direction: column;
+        padding: 8px 0;
+    }
+
+        .menu-item{
+            background: none;
+            border: none;
+            text-align: left;
+            padding: 8px 16px;
+            font-size: 12px;
+            cursor: pointer;
+            color: var(--texto-principal);
+        }
+
+        .menu-item.active{
+            background-color: var(--fondo-barra);
+            color: var(--blanco);
+        }
+
+        /* ====== AREA DE CONTENIDO ====== */
+        #areaContenido {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .seccion {
+            display: none;
+        }
+
+        .seccion.active {
+            display: block;
+        }
+
+        
+     
